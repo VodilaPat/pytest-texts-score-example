@@ -1,0 +1,17 @@
+[project]
+name = "pytest-texts-score-example"
+version = "0.1.0"
+description = "Example of using pytest plugin `pytest-texts-score`"
+readme = "README.md"
+requires-python = ">=3.12,<4.0.0"
+dependencies = [
+    "openai>=1.109.1",
+    "pip>=25.3",
+    "pytest>=9.0.1",
+    "pytest-texts-score>=0.2.1",
+]
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
